@@ -13,4 +13,11 @@ Arianne Ghislaine Rull| Section M Lab 3 | arull@my.yorku.ca
 Georgy Retinskiy      | Section M Lab 3 | drofel@my.yorku.ca
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+## App features
+
+* Grade calculation app
+* Calender - dates from it + the weight of the assignment to calculate the grades
+* Setting reminders and giving notifications for it on home screen
+* Display stats and show trends and patterns of the user
+* Basic game
+
