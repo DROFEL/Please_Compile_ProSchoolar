@@ -5,8 +5,11 @@ Pro-Schoolar is an all-in-one school application for students to successfully ac
 ## Members
 
 Javeria Alam          | Section M Lab 1 | javalam@my.yorku.ca
+
 Jayden Brooks         | Section M Lab 2 | jaydenpb@my.yorku.ca
+
 Arianne Ghislaine Rull| Section M Lab 3 | arull@my.yorku.ca
+
 Georgy Retinskiy      | Section M Lab 3 | drofel@my.yorku.ca
 
 
