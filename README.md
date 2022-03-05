@@ -12,7 +12,7 @@ Jayden Brooks         | Section M Lab 2 | jaydenpb@my.yorku.ca
 
 Arianne Ghislaine Rull| Section M Lab 3 | arull@my.yorku.ca
 
-Georgy Retinskiy      | Section M Lab 3 | drofel@my.yorku.ca
+Georgy Retinskiy      | Section M Lab 2 | drofel@my.yorku.ca
 
 
 ## App features
