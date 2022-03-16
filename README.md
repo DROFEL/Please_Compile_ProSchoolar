@@ -23,3 +23,6 @@ Georgy Retinskiy      | Section M Lab 2 | drofel@my.yorku.ca
 * Display stats and show trends and patterns of the user
 * Basic game
 
+## Figma Design
+
+<a href="https://www.figma.com/file/hU6iIVQVUgYwmV1BfYlXcu/Please-compile!---ProSchoolar?node-id=0%3A1">Figma Link </a>
