@@ -1,33 +1,20 @@
 package com.example.please_compile_proschoolar;
 
+import java.util.ArrayList;
 public class Student {
     String username;
     String password;
-    Task[] tasks;
 
+    ArrayList<Task> taskArary  = new ArrayList<Task>();
 
-    public Task[] getTasks(){
-        return this.tasks;
+    public Student(String name, String password) {
     }
 
-    public void addTask(Task task){
-        Task[] oldTasks = this.tasks;
-        Task[] tempTaskArr = new Task[oldTasks.length];
-        for (int i = 0; i < oldTasks.length; i++) {
-            tempTaskArr[i] = oldTasks[i];
-        }
-        tempTaskArr[oldTasks.length] = task;
-        this.tasks = tempTaskArr;
+    public ArrayList<Task> getTaskArary() {
+        return taskArary;
     }
 
-    public void removeTask(Task task){
-        Task[] taskArr = getTasks();
-        for (int i = 0; i <taskArr.length; i++) {
-            if (taskArr[i].getName().equals(task.getName())){
-                //delete it
-            }
-
-        }
+    public void setTaskArary(ArrayList<Task> taskArary) {
+        this.taskArary = taskArary;
     }
-
 }

@@ -7,21 +7,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import java.util.ArrayList;
 
 public class LoginActivity extends AppCompatActivity {
     String userName = "";
     String userPass = "";
-    Student[] studentArray;
+    ArrayList<Student> studentArray  = new ArrayList<Student>();
 
     private Button btnSignup;
 
-    public Student[] getStudentArray() {
-        return studentArray;
-    }
 
-    public void setStudentArray(Student[] studentArray) {
-        this.studentArray = studentArray;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
