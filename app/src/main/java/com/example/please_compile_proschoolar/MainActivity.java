@@ -9,15 +9,15 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Student currentStudent;
-    private Button btnRegister;
+    private Button btnMainLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnRegister = (Button) findViewById(R.id.btnRegister);
+        btnMainLogin = (Button) findViewById(R.id.btnMainLogin);
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
+        btnMainLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 gotoLoginScreen();

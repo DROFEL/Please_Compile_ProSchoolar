@@ -14,8 +14,14 @@ public class LoginActivity extends AppCompatActivity {
     Student[] studentArray;
 
     private Button btnSignup;
-    
-    
+
+    public Student[] getStudentArray() {
+        return studentArray;
+    }
+
+    public void setStudentArray(Student[] studentArray) {
+        this.studentArray = studentArray;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
