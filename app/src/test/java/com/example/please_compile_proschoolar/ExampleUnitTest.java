@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.please_compile_proschoolar;
 
 import org.junit.Test;
 

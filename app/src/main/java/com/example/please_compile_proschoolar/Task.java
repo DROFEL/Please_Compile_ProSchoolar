@@ -1,3 +1,5 @@
+package com.example.please_compile_proschoolar;
+
 public class Task {
     String name;
     String courseName;
@@ -41,3 +43,4 @@ public class Task {
     }
 
 }
+

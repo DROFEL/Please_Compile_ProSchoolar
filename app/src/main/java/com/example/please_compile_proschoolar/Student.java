@@ -1,3 +1,5 @@
+package com.example.please_compile_proschoolar;
+
 public class Student {
     String username;
     String password;

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Please_Compile_ProSchoolar.iml" filepath="$PROJECT_DIR$/Please_Compile_ProSchoolar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Please-Compile-ProSchoolar.iml" filepath="$PROJECT_DIR$/.idea/modules/Please-Compile-ProSchoolar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Please-Compile-ProSchoolar.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Please-Compile-ProSchoolar.app.iml" />
     </modules>
   </component>
 </project>
