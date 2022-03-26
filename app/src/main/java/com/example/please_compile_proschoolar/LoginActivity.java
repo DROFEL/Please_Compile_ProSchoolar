@@ -28,14 +28,9 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         btnSignup = (Button) findViewById(R.id.btnRegister);
-        btnSignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                gotoSignupScreen();
-            }
-        });
+
     }
-    public void gotoSignupScreen() {
+    public void gotoSignupScreen(View view) {
         Intent intent = new Intent(this, SignupActivity.class);
         startActivity(intent); 
     }

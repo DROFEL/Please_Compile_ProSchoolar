@@ -12,15 +12,75 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/txvMainTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Main Activity" />
 
+        <TextView
+            android:id="@+id/txvTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Name" />
+
+        <TextView
+            android:id="@+id/txvTaskClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text Class" />
+
+        <TextView
+            android:id="@+id/txvTaskGradePercent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Grade:" />
+
+        <TextView
+            android:id="@+id/txvTaskGradeWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Grade Weight" />
+
+        <TextView
+            android:id="@+id/txvTaskDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Due Date " />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:onClick="addTaskClicked"
+            android:text="Add Task" />
+
         <Button
             android:id="@+id/btnMainLogin"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="38dp"
+            android:onClick="gotoLoginScreen"
             android:text="Login" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="left" />
+
+            <Button
+                android:id="@+id/btnRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="right" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

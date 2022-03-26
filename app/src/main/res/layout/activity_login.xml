@@ -47,7 +47,7 @@
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onClick"
+            android:onClick="gotoSignupScreen"
             android:text="Signup" />
 
     </LinearLayout>

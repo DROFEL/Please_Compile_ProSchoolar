@@ -26,23 +26,25 @@ public class SignupActivity extends AppCompatActivity {
 
 
         registerNameInput = (EditText) findViewById(R.id.etxtUsername);
-        registerNameInput = (EditText) findViewById(R.id.etxtPassword);
+        registerPassInput = (EditText) findViewById(R.id.etxtPassword);
         output = (TextView) findViewById(R.id.txtvOutput);
 
         btnRegister = (Button) findViewById(R.id.btnRegister);
-        btnRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                registerName = registerNameInput.getText().toString();
-                registerPass = registerPassInput.getText().toString();
-                Student registeringStudent =  makeStudent(registerName,registerPass);
-                output.setText(registeringStudent.getUsername());
-
-            }
-        });
 
     }
+    public void registerUser(View view){
+        registerName = registerNameInput.getText().toString();
+        registerPass = registerPassInput.getText().toString();
+        Student registeringStudent =  makeStudent(registerName,registerPass);
+
+        //check if the name and password are proper (greater than x len, not empty)
+        //add student to login
+        //make a popup saying user registered
+        //send back to login.
+    }
+
     public Student makeStudent(String name, String pass){
+        output.setText(name+ " " + pass);
         return new Student(name,pass);
     }
 }
