@@ -34,10 +34,17 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btnSignup"
+                android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="Register" />
+
+            <TextView
+                android:id="@+id/txtvOutput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
 
         </LinearLayout>
 

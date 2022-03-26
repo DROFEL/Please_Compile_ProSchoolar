@@ -2,9 +2,9 @@ package com.example.please_compile_proschoolar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import java.util.ArrayList;
@@ -16,6 +16,10 @@ public class LoginActivity extends AppCompatActivity {
 
     private Button btnSignup;
 
+    public void addStudent(Student student){
+        studentArray.add(student);
+        Log.d("Student class methods", "Added new student with username" + student.getUsername() + " and password " + student.getPassword());
+    }
 
 
     @Override
@@ -23,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        btnSignup = (Button) findViewById(R.id.btnSignup);
+        btnSignup = (Button) findViewById(R.id.btnRegister);
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
