@@ -38,6 +38,8 @@ public class SignupActivity extends AppCompatActivity {
         registerName = registerNameInput.getText().toString();
         registerPass = registerPassInput.getText().toString();
         Student registeringStudent =  makeStudent(registerName,registerPass);
+        //Put student into singleton
+        DataSingle.getInstance().setSessionStudent(registeringStudent);
         //NO OBJECT INSTANCE, CAN'T ASSIGN ANYTHING
         // loginActivity.addStudent(registeringStudent)
     }
