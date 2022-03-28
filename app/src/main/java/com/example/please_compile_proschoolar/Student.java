@@ -24,6 +24,8 @@ public class Student {
     ArrayList<Task> taskArary  = new ArrayList<Task>();
 
     public Student(String name, String password) {
+        this.username = name;
+        this.password = password;
     }
 
     public ArrayList<Task> getTaskArary() {

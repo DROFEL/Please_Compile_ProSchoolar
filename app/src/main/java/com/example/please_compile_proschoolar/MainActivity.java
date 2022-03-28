@@ -24,10 +24,6 @@ public class  MainActivity extends AppCompatActivity {
         btnMainLogin = (Button) findViewById(R.id.btnMainLogin);
         btnAddTask = (Button) findViewById(R.id.btnMainLogin);
         title = (TextView) findViewById(R.id.txvMainTitle);
-
-
-
-
     }
     public void gotoLoginScreen(View view) {
         Intent intent = new Intent(this, LoginActivity.class);
@@ -38,5 +34,7 @@ public class  MainActivity extends AppCompatActivity {
     }
 
 
+    public static void main(String[] args) {
 
+    }
 }

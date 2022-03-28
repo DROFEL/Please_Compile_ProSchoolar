@@ -10,7 +10,9 @@ import android.widget.TextView;
 
 public class SignupActivity extends AppCompatActivity {
 
+    public SignupActivity() {
 
+    }
     String registerName;
     String registerPass;
     EditText registerNameInput;
@@ -36,11 +38,8 @@ public class SignupActivity extends AppCompatActivity {
         registerName = registerNameInput.getText().toString();
         registerPass = registerPassInput.getText().toString();
         Student registeringStudent =  makeStudent(registerName,registerPass);
-
-        //check if the name and password are proper (greater than x len, not empty)
-        //add student to login
-        //make a popup saying user registered
-        //send back to login.
+        //NO OBJECT INSTANCE, CAN'T ASSIGN ANYTHING
+        // loginActivity.addStudent(registeringStudent)
     }
 
     public Student makeStudent(String name, String pass){
