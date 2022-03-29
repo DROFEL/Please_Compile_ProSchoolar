@@ -1,11 +1,26 @@
 package com.example.please_compile_proschoolar;
 
+import java.util.Calendar;
+import java.util.Date;
+
 public class Task {
     String name;
     String courseName;
     double percentage;
     double gradeWeight;
+    Calendar dueDate;
 
+    public Task(){ }
+    public Task(Calendar dueDate){
+        this.dueDate = dueDate;
+    }
+
+    public Task(String name, Calendar dueDate){
+            this.name = name;
+            this.dueDate = dueDate;
+    }
+
+//  getters/setters
     public String getName() {
         return name;
     }
@@ -42,5 +57,12 @@ public class Task {
 
     }
 
+    public void setDueDate(Calendar dueDate) {
+        this.dueDate = dueDate;
+    }
+
+    public Calendar getDueDate() {
+        return dueDate;
+    }
 }
 
