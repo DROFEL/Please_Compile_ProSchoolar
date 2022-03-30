@@ -18,7 +18,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void addStudent(Student student){
         studentArray.add(student);
-        Log.d("Student class methods", "Added new student with username" + student.getUsername() + " and password " + student.getPassword());
+       // Log.d("Student class methods", "Added new student with username" + student.getUsername() + " and password " + student.getPassword());
     }
 
 

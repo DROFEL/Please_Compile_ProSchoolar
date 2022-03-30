@@ -3,6 +3,7 @@ package com.example.please_compile_proschoolar;
 public class DataSingle {
     private static DataSingle instance;
 
+
     //singleton implementation start
     private DataSingle(){}
 

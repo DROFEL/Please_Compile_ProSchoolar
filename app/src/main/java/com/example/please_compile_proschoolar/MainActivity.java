@@ -15,6 +15,8 @@ public class  MainActivity extends AppCompatActivity {
     private Button btnMainLogin;
     private  Button btnAddTask;
     private TextView title;
+    private TextView test;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +26,14 @@ public class  MainActivity extends AppCompatActivity {
         btnMainLogin = (Button) findViewById(R.id.btnMainLogin);
         btnAddTask = (Button) findViewById(R.id.btnMainLogin);
         title = (TextView) findViewById(R.id.txvMainTitle);
+        test = (TextView) findViewById(R.id.txvTestText);
+        test.setText();
     }
     public void gotoLoginScreen(View view) {
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, LoginActivity.class);
+        //startActivity(intent);
+        setContentView(R.layout.test_layout);
+        DataSingle.getInstance()
     }
     public void addTaskClicked(View view){
         title.setText("Add task");
