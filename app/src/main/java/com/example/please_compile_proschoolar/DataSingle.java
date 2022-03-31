@@ -26,7 +26,7 @@ public class DataSingle {
     }
 
     public void setSessionStudent(String name){
-
+        sessionStudent = Loader.loadStudent(name);
     }
 
     public Student getSessionStudent() {

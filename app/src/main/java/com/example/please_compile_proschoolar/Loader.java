@@ -6,7 +6,7 @@ public class Loader {
 
     }
 
-    public static Student getStudent(String name){
-        return new Student("user", "user");
+    public static Student loadStudent(String name){
+        return new Student(name, name);
     }
 }
