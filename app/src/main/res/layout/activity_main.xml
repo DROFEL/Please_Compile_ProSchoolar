@@ -51,7 +51,7 @@
             android:id="@+id/btnMainAddTask"
             android:layout_width="wrap_content"
             android:layout_height="36dp"
-            android:onClick="addTaskClicked"
+            android:onClick="btnMainAddTaskClick"
             android:text="Add Task" />
 
         <Button

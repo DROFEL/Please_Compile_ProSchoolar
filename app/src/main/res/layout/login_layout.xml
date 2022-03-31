@@ -40,12 +40,14 @@
             android:id="@+id/btnLoginSubmit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="btnLoginSubmitClick"
             android:text="Login" />
 
         <Button
             android:id="@+id/btnLoginSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="btnLoginSignupClick"
             android:text="Sign up" />
 
     </LinearLayout>

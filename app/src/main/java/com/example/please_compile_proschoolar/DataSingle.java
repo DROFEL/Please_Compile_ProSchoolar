@@ -17,6 +17,7 @@ public class DataSingle {
 
     //variables
     Student sessionStudent;
+    String dsTest = ("she don't like you back bro");
 
     //getters/setters
     public void setSessionStudent(Student sessionStudent) {
