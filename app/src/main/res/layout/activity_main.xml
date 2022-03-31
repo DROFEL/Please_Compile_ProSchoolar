@@ -15,43 +15,43 @@
             android:id="@+id/txvMainTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Main Activity" />
+            android:text="Manage your Tasks" />
 
         <TextView
-            android:id="@+id/txvTaskName"
+            android:id="@+id/txvMainTaskName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Task Name" />
 
         <TextView
-            android:id="@+id/txvTaskClass"
+            android:id="@+id/txvMainTaskCourse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Text Class" />
+            android:text="Text Course" />
 
         <TextView
-            android:id="@+id/txvTaskGradePercent"
+            android:id="@+id/txvMainTaskGradePercent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Task Grade:" />
 
         <TextView
-            android:id="@+id/txvTaskGradeWeight"
+            android:id="@+id/txvMainTaskGradeWeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Task Grade Weight" />
 
         <TextView
-            android:id="@+id/txvTaskDueDate"
+            android:id="@+id/txvMainTaskDueDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Task Due Date " />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnMainAddTask"
             android:layout_width="wrap_content"
             android:layout_height="36dp"
-            android:onClick="addTaskClicked"
+            android:onClick="btnMainAddTaskClick"
             android:text="Add Task" />
 
         <Button
@@ -67,14 +67,14 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnLeft"
+                android:id="@+id/btnMainLeft"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="left" />
 
             <Button
-                android:id="@+id/btnRight"
+                android:id="@+id/btnMainRight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

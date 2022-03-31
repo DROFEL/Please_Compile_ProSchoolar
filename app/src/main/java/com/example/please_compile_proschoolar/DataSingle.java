@@ -3,6 +3,7 @@ package com.example.please_compile_proschoolar;
 public class DataSingle {
     private static DataSingle instance;
 
+
     //singleton implementation start
     private DataSingle(){}
 
@@ -16,6 +17,7 @@ public class DataSingle {
 
     //variables
     Student sessionStudent;
+    String dsTest = ("she don't like you back bro");
 
     //getters/setters
     public void setSessionStudent(Student sessionStudent) {
