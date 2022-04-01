@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class  MainActivity extends AppCompatActivity {
     private Student currentStudent;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     public Student getCurrentStudent() {
         return currentStudent;
@@ -62,6 +63,13 @@ public class  MainActivity extends AppCompatActivity {
     private TextView test;
 
 >>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
+=======
+    private Button btnMainLogin;
+    private  Button btnAddTask;
+    private TextView title;
+    private TextView test;
+
+>>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +77,7 @@ public class  MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         //MAIN LAYOUT
        // mainView = R.layout.activity_main;
@@ -107,16 +116,23 @@ public class  MainActivity extends AppCompatActivity {
 
 =======
         btnMainLogin = (Button) findViewById(R.id.btnMainLogin);
+=======
+        btnMainLogin = (Button) findViewById(R.id.btnMainLogin);
+>>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
         btnAddTask = (Button) findViewById(R.id.btnMainLogin);
         title = (TextView) findViewById(R.id.txvMainTitle);
         test = (TextView) findViewById(R.id.txvTestText);
         test.setText();
+<<<<<<< HEAD
+>>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
+=======
 >>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
     }
     // MAIN BUTTONS
     public void gotoLoginScreen(View view) {
         //Intent intent = new Intent(this, LoginActivity.class);
         //startActivity(intent);
+<<<<<<< HEAD
 <<<<<<< HEAD
         setContentView(R.layout.login_layout);
         //DataSingle ds = DataSingle.getInstance();
@@ -145,6 +161,13 @@ public class  MainActivity extends AppCompatActivity {
 
     public void btnLoginSignupClick(View view){
         setContentView(R.layout.signup_layout);
+=======
+        setContentView(R.layout.test_layout);
+        DataSingle.getInstance()
+    }
+    public void addTaskClicked(View view){
+        title.setText("Add task");
+>>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
     }
 
     // SIGNUP BUTTONS
