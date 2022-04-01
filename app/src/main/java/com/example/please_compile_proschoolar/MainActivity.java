@@ -2,16 +2,18 @@ package com.example.please_compile_proschoolar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
-public class  MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
 
+public class  MainActivity extends AppCompatActivity {
     private Student currentStudent;
+<<<<<<< HEAD
 
     public Student getCurrentStudent() {
         return currentStudent;
@@ -53,6 +55,13 @@ public class  MainActivity extends AppCompatActivity {
     private EditText etxtSignupPassword;
     private Button btnSignupRegister;
     private Button btnSignupReturn;
+=======
+    private Button btnMainLogin;
+    private  Button btnAddTask;
+    private TextView title;
+    private TextView test;
+
+>>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +69,7 @@ public class  MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
         //MAIN LAYOUT
        // mainView = R.layout.activity_main;
         setContentView(R.layout.activity_main);
@@ -95,11 +105,19 @@ public class  MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+=======
+        btnMainLogin = (Button) findViewById(R.id.btnMainLogin);
+        btnAddTask = (Button) findViewById(R.id.btnMainLogin);
+        title = (TextView) findViewById(R.id.txvMainTitle);
+        test = (TextView) findViewById(R.id.txvTestText);
+        test.setText();
+>>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
     }
     // MAIN BUTTONS
     public void gotoLoginScreen(View view) {
         //Intent intent = new Intent(this, LoginActivity.class);
         //startActivity(intent);
+<<<<<<< HEAD
         setContentView(R.layout.login_layout);
         //DataSingle ds = DataSingle.getInstance();
 
@@ -110,6 +128,13 @@ public class  MainActivity extends AppCompatActivity {
         txvMainTitle.setText("Add task");
 
 
+=======
+        setContentView(R.layout.test_layout);
+        DataSingle.getInstance()
+    }
+    public void addTaskClicked(View view){
+        title.setText("Add task");
+>>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
     }
 
     public void btnLoginSubmitClick(View view){
