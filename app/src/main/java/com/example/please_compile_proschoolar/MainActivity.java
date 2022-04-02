@@ -24,6 +24,8 @@ public class  MainActivity extends AppCompatActivity {
         this.currentStudent = currentStudent;
     }
 
+    public static MainActivity instance = null;
+
     //MAIN LAYOUT
     public static View mainView;
     private Button btnMainLogin;
@@ -57,7 +59,6 @@ public class  MainActivity extends AppCompatActivity {
     private Button btnSignupRegister;
     private Button btnSignupReturn;
 
-    private Button btnMainLogin;
     private  Button btnAddTask;
     private TextView title;
     private TextView test;
@@ -69,48 +70,8 @@ public class  MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        instance = this;
 
-        //MAIN LAYOUT
-       // mainView = R.layout.activity_main;
-        setContentView(R.layout.activity_main);
-        btnMainLogin = (Button) findViewById(R.id.btnMainLogin);
-        btnMainAddTask = (Button) findViewById(R.id.btnMainAddTask);
-        btnMainLeft = (Button) findViewById(R.id.btnMainLeft);
-        btnMainRight = (Button) findViewById(R.id.btnMainRight);
-        txvMainTitle = (TextView) findViewById(R.id.txvMainTitle);
-
-        //TASK LAYOUT
-        txvMainTaskName =(TextView) findViewById(R.id.txvMainTaskName);
-        txvMainTaskCourse =(TextView) findViewById(R.id.txvMainTaskCourse);
-        txvMainTaskGradePrecent =(TextView) findViewById(R.id.txvMainTaskGradePercent);
-        txvMainTaskGradeWeight =(TextView) findViewById(R.id.txvMainTaskGradeWeight);
-        txvMainTaskDueDate =(TextView) findViewById(R.id.txvMainTaskDueDate);
-
-        //LOGIN LAYOUT
-        setContentView(R.layout.login_layout);
-        txvLoginTitle = (TextView) findViewById(R.id.txvLoginTitle);
-        etxtLoginName = (EditText) findViewById(R.id.etxtLoginName);
-        etxtLoginPassword = (EditText) findViewById(R.id.etxtLoginPassword);
-        btnLoginSignup = (Button) findViewById(R.id.btnLoginSignup);
-        btnLoginSubmit = (Button) findViewById(R.id.btnLoginSubmit);
-
-        //SIGNUP LAYOUT
-        setContentView(R.layout.signup_layout);
-        txvSignupTitle = (TextView) findViewById(R.id.txvSignupTitle);
-        etxtSignupName = (EditText) findViewById(R.id.etxtSignupName);
-        etxtSignupPassword = (EditText) findViewById(R.id.etxtSignupPassword);
-        btnSignupRegister = (Button) findViewById(R.id.btnSignupRegister);
-        btnSignupReturn = (Button) findViewById(R.id.btnSignupReturn);
-
-        setContentView(R.layout.activity_main);
-
-
-
-        btnMainLogin = (Button) findViewById(R.id.btnMainLogin);
-        btnAddTask = (Button) findViewById(R.id.btnMainLogin);
-        title = (TextView) findViewById(R.id.txvMainTitle);
-        test = (TextView) findViewById(R.id.txvTestText);
-        test.setText();
 
     }
     // MAIN BUTTONS
