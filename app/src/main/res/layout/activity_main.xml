@@ -4,160 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
 
-    tools:context=".MainActivity"
-    android:background="@drawable/gradient_background">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="211dp"
+        android:layout_height="159dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/e384c338_cd9c_448e_8a17_1a2e8a46cce1__1_" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#BABABA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:textStyle="bold"
+        android:textColor="#BABABA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.09" />
 
-        <TextView
-            android:id="@+id/txvMainTitle"
-            android:layout_width="196dp"
-            android:layout_height="36dp"
-            android:textColor="@color/white"
-            android:gravity="top"
-            android:text="TO DO:"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="17dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="40dp"
-            android:textSize="26dp"
-            android:fontFamily="sans-serif-medium"
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#BABABA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password"
+        android:textStyle="bold"
+        android:textColor="#BABABA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.076" />
 
-            />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/round1"
+        android:text="SIGN IN"
+        android:textStyle="bold|italic"
+        android:textColor="#C8C8C8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintVertical_bias="0.277" />
 
-        <TextView
-            android:id="@+id/txvTaskName"
-            android:textColor="@color/white"
-            android:text="Task Name"
-            android:layout_width="159dp"
-            android:layout_height="31dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="18dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="36dp"
-            android:textSize="16dp"
-            />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round1"
+        android:text="SIGN UP"
+        android:textStyle="bold|italic"
+        android:textColor="#C8C8C8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintVertical_bias="0.277" />
 
-        <TextView
-            android:id="@+id/txvTaskClass"
-            android:layout_width="159dp"
-            android:layout_height="31dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="18dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="4dp"
-            android:textColor="@color/white"
-            android:textSize="16dp"
-            android:text="Text Class" />
-
-        <TextView
-            android:id="@+id/txvTaskGradePercent"
-            android:layout_width="159dp"
-            android:layout_height="31dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="18dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="4dp"
-            android:textColor="@color/white"
-            android:textSize="16dp"
-            android:text="Task Grade:" />
-
-        <TextView
-            android:id="@+id/txvTaskGradeWeight"
-            android:layout_width="159dp"
-            android:layout_height="31dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="18dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="4dp"
-            android:textColor="@color/white"
-            android:textSize="16dp"
-            android:text="Task Grade Weight" />
-
-        <TextView
-            android:id="@+id/txvTaskDueDate"
-            android:layout_width="159dp"
-            android:layout_height="31dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="18dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="4dp"
-            android:textColor="@color/white"
-            android:textSize="16dp"
-            android:text="Task Due Date " />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_height="44dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="18dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#3A5A40"
-            android:onClick="btnMainAddTaskClick"
-            android:text="Add Task"
-            android:textColor="@color/white"
-            android:textSize="16dp"
-            app:cornerRadius="8dp"
-            android:layout_marginRight="18dp"
-            android:layout_width="match_parent"
-            app:iconTint="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btnMainLogin"
-            android:layout_height="44dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="18dp"
-            android:layout_marginTop="4dp"
-            android:backgroundTint="#3A5A40"
-            android:onClick="gotoLoginScreen"
-            android:textColor="@color/white"
-            android:textSize="16dp"
-            app:cornerRadius="8dp"
-            android:layout_marginRight="18dp"
-            android:layout_width="match_parent"
-            android:text="Login" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="18dp"
-            android:layout_marginRight="18dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#3A5A40"
-            >
-
-            <Button
-                android:id="@+id/btnLeft"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:layout_weight="1"
-                app:cornerRadius="8dp"
-                android:backgroundTint="#30302E"
-                android:textColor="#FFFF"
-                android:text="left" />
-
-            <Button
-                android:id="@+id/btnRight"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:layout_weight="1"
-
-                android:backgroundTint="#30302E"
-                android:text="right"
-                android:textColor="#FFFF"
-                app:cornerRadius="8dp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="LOG IN TO YOUR ACCOUNT:"
+        android:textStyle="bold"
+        android:textColor="#BABABA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
