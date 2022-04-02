@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,72 +14,145 @@
 
         <TextView
             android:id="@+id/txvMainTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Manage your Tasks" />
+            android:layout_width="196dp"
+            android:layout_height="36dp"
+            android:textColor="@color/white"
+            android:gravity="top"
+            android:text="TO DO:"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:textSize="26dp"
+            android:fontFamily="sans-serif-medium"
+
+            />
 
         <TextView
-            android:id="@+id/txvMainTaskName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Task Name" />
+            android:id="@+id/txvTaskName"
+            android:textColor="@color/white"
+            android:text="Task Name"
+            android:layout_width="159dp"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="36dp"
+            android:textSize="16dp"
+            />
 
         <TextView
-            android:id="@+id/txvMainTaskCourse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Text Course" />
+            android:id="@+id/txvTaskClass"
+            android:layout_width="159dp"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:text="Text Class" />
 
         <TextView
-            android:id="@+id/txvMainTaskGradePercent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/txvTaskGradePercent"
+            android:layout_width="159dp"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
             android:text="Task Grade:" />
 
         <TextView
-            android:id="@+id/txvMainTaskGradeWeight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/txvTaskGradeWeight"
+            android:layout_width="159dp"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
             android:text="Task Grade Weight" />
 
         <TextView
-            android:id="@+id/txvMainTaskDueDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/txvTaskDueDate"
+            android:layout_width="159dp"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
             android:text="Task Due Date " />
 
         <Button
-            android:id="@+id/btnMainAddTask"
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
+            android:id="@+id/button3"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#3A5A40"
             android:onClick="btnMainAddTaskClick"
-            android:text="Add Task" />
+            android:text="Add Task"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:cornerRadius="8dp"
+            android:layout_marginRight="18dp"
+            android:layout_width="match_parent"
+            app:iconTint="#FFFFFF" />
 
         <Button
             android:id="@+id/btnMainLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#3A5A40"
             android:onClick="gotoLoginScreen"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:cornerRadius="8dp"
+            android:layout_marginRight="18dp"
+            android:layout_width="match_parent"
             android:text="Login" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#3A5A40"
+            >
 
             <Button
-                android:id="@+id/btnMainLeft"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/btnLeft"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
                 android:layout_weight="1"
+                app:cornerRadius="8dp"
+                android:backgroundTint="#30302E"
+                android:textColor="#FFFF"
                 android:text="left" />
 
             <Button
-                android:id="@+id/btnMainRight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/btnRight"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
                 android:layout_weight="1"
-                android:text="right" />
+                android:backgroundTint="#30302E"
+                android:text="right"
+                android:textColor="#FFFF"
+                app:cornerRadius="8dp" />
 
         </LinearLayout>
 

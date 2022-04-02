@@ -2,6 +2,7 @@ package com.example.please_compile_proschoolar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,9 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class  MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
 
+public class  MainActivity extends AppCompatActivity {
     private Student currentStudent;
+
 
     public Student getCurrentStudent() {
         return currentStudent;
@@ -54,11 +57,18 @@ public class  MainActivity extends AppCompatActivity {
     private Button btnSignupRegister;
     private Button btnSignupReturn;
 
+    private Button btnMainLogin;
+    private  Button btnAddTask;
+    private TextView title;
+    private TextView test;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         //MAIN LAYOUT
        // mainView = R.layout.activity_main;
@@ -95,11 +105,19 @@ public class  MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
+        btnMainLogin = (Button) findViewById(R.id.btnMainLogin);
+        btnAddTask = (Button) findViewById(R.id.btnMainLogin);
+        title = (TextView) findViewById(R.id.txvMainTitle);
+        test = (TextView) findViewById(R.id.txvTestText);
+        test.setText();
+
     }
     // MAIN BUTTONS
     public void gotoLoginScreen(View view) {
         //Intent intent = new Intent(this, LoginActivity.class);
         //startActivity(intent);
+
         setContentView(R.layout.login_layout);
         //DataSingle ds = DataSingle.getInstance();
 
@@ -110,6 +128,12 @@ public class  MainActivity extends AppCompatActivity {
         txvMainTitle.setText("Add task");
 
 
+
+        setContentView(R.layout.test_layout);
+        DataSingle.getInstance();
+    }
+    public void addTaskClicked(View view){
+        title.setText("Add task");
     }
 
     public void btnLoginSubmitClick(View view){
