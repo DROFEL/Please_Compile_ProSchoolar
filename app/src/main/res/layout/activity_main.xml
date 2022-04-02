@@ -29,7 +29,7 @@
             />
 
         <TextView
-            android:id="@+id/txvTaskName"
+            android:id="@+id/txvMainTaskName"
             android:textColor="@color/white"
             android:text="Task Name"
             android:layout_width="159dp"
@@ -42,7 +42,7 @@
             />
 
         <TextView
-            android:id="@+id/txvTaskClass"
+            android:id="@+id/txvMainTaskCourse"
             android:layout_width="159dp"
             android:layout_height="31dp"
             android:layout_alignParentLeft="true"
@@ -54,7 +54,7 @@
             android:text="Text Class" />
 
         <TextView
-            android:id="@+id/txvTaskGradePercent"
+            android:id="@+id/txvMainTaskGradePercent"
             android:layout_width="159dp"
             android:layout_height="31dp"
             android:layout_alignParentLeft="true"
@@ -66,7 +66,7 @@
             android:text="Task Grade:" />
 
         <TextView
-            android:id="@+id/txvTaskGradeWeight"
+            android:id="@+id/txvMainTaskGradeWeight"
             android:layout_width="159dp"
             android:layout_height="31dp"
             android:layout_alignParentLeft="true"
@@ -78,7 +78,7 @@
             android:text="Task Grade Weight" />
 
         <TextView
-            android:id="@+id/txvTaskDueDate"
+            android:id="@+id/txvMainTaskDueDate"
             android:layout_width="159dp"
             android:layout_height="31dp"
             android:layout_alignParentLeft="true"
@@ -90,7 +90,7 @@
             android:text="Task Due Date " />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnMainAddTask"
             android:layout_height="44dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -135,7 +135,7 @@
             >
 
             <Button
-                android:id="@+id/btnLeft"
+                android:id="@+id/btnMainLeft"
                 android:layout_width="match_parent"
                 android:layout_height="44dp"
                 android:layout_weight="1"
@@ -145,7 +145,7 @@
                 android:text="left" />
 
             <Button
-                android:id="@+id/btnRight"
+                android:id="@+id/btnMainRight"
                 android:layout_width="match_parent"
                 android:layout_height="44dp"
                 android:layout_weight="1"

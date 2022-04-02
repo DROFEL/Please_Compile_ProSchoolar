@@ -14,12 +14,7 @@ import java.util.ArrayList;
 
 public class  MainActivity extends AppCompatActivity {
     private Student currentStudent;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> d0345a9a99656b6bc0e245512e347ead95849c85
 
     public Student getCurrentStudent() {
         return currentStudent;
@@ -62,22 +57,19 @@ public class  MainActivity extends AppCompatActivity {
     private Button btnSignupRegister;
     private Button btnSignupReturn;
 
-    private Button btnMainLogin;
+
+    //private Button btnMainLogin;
     private  Button btnAddTask;
     private TextView title;
     private TextView test;
 
-<<<<<<< HEAD
->>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
-=======
-    private Button btnMainLogin;
-    private  Button btnAddTask;
-    private TextView title;
-    private TextView test;
 
->>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
-=======
->>>>>>> d0345a9a99656b6bc0e245512e347ead95849c85
+    //private Button btnMainLogin;
+   // private  Button btnAddTask;
+   // private TextView title;
+   // private TextView test;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,12 +77,7 @@ public class  MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> d0345a9a99656b6bc0e245512e347ead95849c85
         //MAIN LAYOUT
        // mainView = R.layout.activity_main;
         setContentView(R.layout.activity_main);
@@ -128,32 +115,20 @@ public class  MainActivity extends AppCompatActivity {
 
 
         btnMainLogin = (Button) findViewById(R.id.btnMainLogin);
-=======
+
         btnMainLogin = (Button) findViewById(R.id.btnMainLogin);
->>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
+
         btnAddTask = (Button) findViewById(R.id.btnMainLogin);
         title = (TextView) findViewById(R.id.txvMainTitle);
         test = (TextView) findViewById(R.id.txvTestText);
-        test.setText();
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
-=======
->>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
-=======
+        //test.setText("");
 
->>>>>>> d0345a9a99656b6bc0e245512e347ead95849c85
     }
     // MAIN BUTTONS
     public void gotoLoginScreen(View view) {
         //Intent intent = new Intent(this, LoginActivity.class);
         //startActivity(intent);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> d0345a9a99656b6bc0e245512e347ead95849c85
         setContentView(R.layout.login_layout);
         //DataSingle ds = DataSingle.getInstance();
 
@@ -165,7 +140,7 @@ public class  MainActivity extends AppCompatActivity {
 
 
 
-        setContentView(R.layout.test_layout);
+        //setContentView(R.layout.test_layout);
         DataSingle.getInstance();
     }
     public void addTaskClicked(View view){
@@ -180,14 +155,17 @@ public class  MainActivity extends AppCompatActivity {
 
     public void btnLoginSignupClick(View view){
         setContentView(R.layout.signup_layout);
-=======
-        setContentView(R.layout.test_layout);
-        DataSingle.getInstance()
+//=======
+        //setContentView(R.layout.test_layout);
+        DataSingle.getInstance();
     }
+    /*
     public void addTaskClicked(View view){
         title.setText("Add task");
->>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
-    }
+
+     */
+//>>>>>>> parent of e61260d (everything is inside the MainActivity.java file now)
+   // }
 
     // SIGNUP BUTTONS
     public void btnSignupRegisterClick(View view){
@@ -199,6 +177,7 @@ public class  MainActivity extends AppCompatActivity {
         DataSingle ds = DataSingle.getInstance();
         ds.setSessionStudent(regStudent);
         setCurrentStudent( ds.getSessionStudent());
+        txvSignupTitle.setText(currentStudent.username);
 
     }
 
