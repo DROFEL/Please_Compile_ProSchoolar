@@ -30,16 +30,15 @@
 
         <TextView
             android:id="@+id/txvMainTaskName"
-            android:textColor="@color/white"
-            android:text="Task Name"
             android:layout_width="159dp"
             android:layout_height="31dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="18dp"
             android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
             android:layout_marginTop="36dp"
-            android:textSize="16dp"
-            />
+            android:text="scv are gone"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
 
         <TextView
             android:id="@+id/txvMainTaskCourse"

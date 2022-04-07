@@ -75,12 +75,12 @@ public class  MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+       // setContentView(R.layout.activity_main);
 
 
         //MAIN LAYOUT
        // mainView = R.layout.activity_main;
-        setContentView(R.layout.activity_main);
+       // setContentView(R.layout.activity_main);
         btnMainLogin = (Button) findViewById(R.id.btnMainLogin);
         btnMainAddTask = (Button) findViewById(R.id.btnMainAddTask);
         btnMainLeft = (Button) findViewById(R.id.btnMainLeft);
@@ -95,7 +95,7 @@ public class  MainActivity extends AppCompatActivity {
         txvMainTaskDueDate =(TextView) findViewById(R.id.txvMainTaskDueDate);
 
         //LOGIN LAYOUT
-        setContentView(R.layout.login_layout);
+       //setContentView(R.layout.login_layout);
         txvLoginTitle = (TextView) findViewById(R.id.txvLoginTitle);
         etxtLoginName = (EditText) findViewById(R.id.etxtLoginName);
         etxtLoginPassword = (EditText) findViewById(R.id.etxtLoginPassword);
@@ -103,14 +103,14 @@ public class  MainActivity extends AppCompatActivity {
         btnLoginSubmit = (Button) findViewById(R.id.btnLoginSubmit);
 
         //SIGNUP LAYOUT
-        setContentView(R.layout.signup_layout);
+        //setContentView(R.layout.signup_layout);
         txvSignupTitle = (TextView) findViewById(R.id.txvSignupTitle);
         etxtSignupName = (EditText) findViewById(R.id.etxtSignupName);
         etxtSignupPassword = (EditText) findViewById(R.id.etxtSignupPassword);
         btnSignupRegister = (Button) findViewById(R.id.btnSignupRegister);
         btnSignupReturn = (Button) findViewById(R.id.btnSignupReturn);
 
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
 
 
 
@@ -129,23 +129,21 @@ public class  MainActivity extends AppCompatActivity {
         //Intent intent = new Intent(this, LoginActivity.class);
         //startActivity(intent);
 
-        setContentView(R.layout.login_layout);
+       // //setContentView(R.layout.login_layout);
         //DataSingle ds = DataSingle.getInstance();
 
     }
     public void btnMainAddTaskClick(View view){
-        //setContentView(R.layout.activity_main);
+        ////setContentView(R.layout.activity_main);
         Log.d("success","function ran");
         txvMainTitle.setText("Add task");
 
 
 
-        //setContentView(R.layout.test_layout);
+        ////setContentView(R.layout.test_layout);
         DataSingle.getInstance();
     }
-    public void addTaskClicked(View view){
-        title.setText("Add task");
-    }
+
 
     public void btnLoginSubmitClick(View view){
         //Log them in
@@ -154,9 +152,9 @@ public class  MainActivity extends AppCompatActivity {
     }
 
     public void btnLoginSignupClick(View view){
-        setContentView(R.layout.signup_layout);
+        //setContentView(R.layout.signup_layout);
 //=======
-        //setContentView(R.layout.test_layout);
+        ////setContentView(R.layout.test_layout);
         DataSingle.getInstance();
     }
     /*
@@ -170,7 +168,7 @@ public class  MainActivity extends AppCompatActivity {
     // SIGNUP BUTTONS
     public void btnSignupRegisterClick(View view){
         //register the student instance
-        setContentView(R.layout.signup_layout);
+        //setContentView(R.layout.signup_layout);
         String regName = etxtSignupName.getText().toString();
         String regPass = etxtSignupPassword.getText().toString();
         Student regStudent = new Student(regName,regPass);
@@ -183,7 +181,7 @@ public class  MainActivity extends AppCompatActivity {
 
     public void btnSignupReturnClick(View view){
         //should send back to main, using to test the student object
-        //setContentView(R.layout.activity_main);
+        ////setContentView(R.layout.activity_main);
         DataSingle ds = DataSingle.getInstance();
        String dsUsername = getCurrentStudent().getUsername();
        Log.d("student","new student " + dsUsername);
