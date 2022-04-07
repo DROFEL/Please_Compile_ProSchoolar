@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 /**
@@ -37,5 +38,20 @@ public class UnitTest {
         }
 
         assertEquals("Task Sorting By date: ","2000/01/01 2002/01/01 2003/01/01 2005/01/01 ", output);
+    }
+
+    @Test
+    public void savingStudents(){
+
+        ArrayList<Student> students = new ArrayList<Student>();
+
+        students.add(new Student("aboba" , "123"));
+        students.add(new Student("misha" , "123"));
+
+        ArrayList<Student> output = Loader.Test(students);
+
+
+        assertEquals("aboba", students.get(0).getUsername());
+        assertEquals("misha", students.get(1).getUsername());
     }
 }

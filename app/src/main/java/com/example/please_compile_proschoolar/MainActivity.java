@@ -24,6 +24,8 @@ public class  MainActivity extends AppCompatActivity {
         this.currentStudent = currentStudent;
     }
 
+    public static MainActivity instance = null;
+
     //MAIN LAYOUT
     public static View mainView;
     private Button btnMainLogin;
@@ -57,8 +59,11 @@ public class  MainActivity extends AppCompatActivity {
     private Button btnSignupRegister;
     private Button btnSignupReturn;
 
+<<<<<<< HEAD
 
     //private Button btnMainLogin;
+=======
+>>>>>>> b6c82518afbc5ea6c9330d91c100835d32688593
     private  Button btnAddTask;
     private TextView title;
     private TextView test;
@@ -77,7 +82,9 @@ public class  MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
        // setContentView(R.layout.activity_main);
 
+        instance = this;
 
+<<<<<<< HEAD
         //MAIN LAYOUT
        // mainView = R.layout.activity_main;
        // setContentView(R.layout.activity_main);
@@ -122,6 +129,8 @@ public class  MainActivity extends AppCompatActivity {
         title = (TextView) findViewById(R.id.txvMainTitle);
         test = (TextView) findViewById(R.id.txvTestText);
         //test.setText("");
+=======
+>>>>>>> b6c82518afbc5ea6c9330d91c100835d32688593
 
     }
     // MAIN BUTTONS

@@ -4,30 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/gradient_background">
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="211dp"
+        android:layout_height="159dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/e384c338_cd9c_448e_8a17_1a2e8a46cce1__1_" />
 
-        <TextView
-            android:id="@+id/txvMainTitle"
-            android:layout_width="196dp"
-            android:layout_height="36dp"
-            android:textColor="@color/white"
-            android:gravity="top"
-            android:text="TO DO:"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="17dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="40dp"
-            android:textSize="26dp"
-            android:fontFamily="sans-serif-medium"
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#BABABA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:textStyle="bold"
+        android:textColor="#BABABA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.09" />
 
-            />
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#BABABA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password"
+        android:textStyle="bold"
+        android:textColor="#BABABA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.076" />
 
+<<<<<<< HEAD
         <TextView
             android:id="@+id/txvMainTaskName"
             android:layout_width="159dp"
@@ -156,5 +180,49 @@
         </LinearLayout>
 
     </LinearLayout>
+=======
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/round1"
+        android:text="SIGN IN"
+        android:textStyle="bold|italic"
+        android:textColor="#C8C8C8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round1"
+        android:text="SIGN UP"
+        android:textStyle="bold|italic"
+        android:textColor="#C8C8C8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="LOG IN TO YOUR ACCOUNT:"
+        android:textStyle="bold"
+        android:textColor="#BABABA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+>>>>>>> b6c82518afbc5ea6c9330d91c100835d32688593
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,14 +2,19 @@ package com.example.please_compile_proschoolar;
 
 public class DataSingle {
     private static DataSingle instance;
+    private Loader loader;
 
 
     //singleton implementation start
-    private DataSingle(){}
+    private DataSingle(){
+        loader = new Loader();
+    }
 
     public static DataSingle getInstance() {
         if(instance == null)
             instance = new DataSingle();
+
+
 
         return instance;
     }
@@ -22,11 +27,11 @@ public class DataSingle {
     //use these 2 methods to add a new student(1 one) or get existing one(2nd one)
     public void setSessionStudent(Student sessionStudent) {
         this.sessionStudent = sessionStudent;
-        Loader.addStudent(sessionStudent);
+        loader.addStudent(sessionStudent);
     }
 
     public void setSessionStudent(String name){
-        sessionStudent = Loader.loadStudent(name);
+        sessionStudent = loader.loadStudent(name);
     }
 
     public Student getSessionStudent() {
